@@ -3,9 +3,9 @@
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
+export const metadata = { title: "o-mne | ZoškaSnap"}
 
-
-export default function Home() {
+export default function AboutMe() {
   return (
     <Container>
         <Typography>Stránka o mne</Typography>
