@@ -1,19 +1,23 @@
 {
-  "name": "projektprvy",
+  "name": "snap-zoska",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
+    "postinstall": "prisma generate",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.7.4",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@fontsource/roboto": "^5.1.0",
-    "@mui/material": "^6.1.0",
-    "next": "^14.2.12",
+    "@mui/icons-material": "^6.1.4",
+    "@mui/material": "^6.1.4",
+    "@prisma/client": "^5.22.0",
+    "next": "14.2.11",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -22,7 +26,8 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.9",
+    "eslint-config-next": "14.2.11",
+    "prisma": "^5.22.0",
     "typescript": "^5"
   }
 }
